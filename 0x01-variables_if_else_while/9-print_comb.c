@@ -6,11 +6,15 @@
 int main(void)
 {
 	int num;
+	char comma;
+	char dollar;
 
+	comma = ',';
+	dollar = '$';
 	for (num = '0'; num <= '9'; num++)
 		putchar(num);
-		/*putchar(','); */
-		/*putchar(' ');*/
-	putchar('$');
+		putchar(comma);
+		putchar(' ');
+	putchar(dollar);
 	return (0);
 }
