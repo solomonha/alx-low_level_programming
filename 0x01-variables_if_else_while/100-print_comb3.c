@@ -19,9 +19,11 @@ int main(void)
 				putchar(num);
 				putchar(num2);
 				if (num == '8' && num2 == '9')
+				{
 					continue;
 					putchar(',')
 					putchar(' ');
+				}
 			}	
 		}
 
