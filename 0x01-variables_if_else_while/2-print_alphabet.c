@@ -15,10 +15,8 @@ int main(void)
 {
 	char ch;
 
-	ch = 'a';
-	while (ch <= 'z')
+	for  (ch = 'a'; ch <= 'z'; ch++)
 	{
-		ch++;
 		putchar(ch);	
 		putchar('\n');
 	}
