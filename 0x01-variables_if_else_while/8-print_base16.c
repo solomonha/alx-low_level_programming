@@ -2,7 +2,7 @@
 /**
  * main - a program that prints all the numbers of base 16 in lowercase
  * You can only use the putchar function
- * returns  0 (success)
+ * return: 0 (success)
  */
 int main(void)
 {
