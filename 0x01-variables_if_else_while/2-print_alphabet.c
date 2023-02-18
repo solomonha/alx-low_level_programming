@@ -9,7 +9,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - A program that prints lowercase characters
- * Return: 0 (success)
+ * Return:  (success)
  */
 int main(void)
 {
