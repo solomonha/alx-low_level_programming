@@ -17,9 +17,11 @@ int main(void)
 				{
 				for (n = k; n <= 9; n++)
 					{
-					printf("%d%d", i, j);
+					printf("%d", i);
+					printf("%d", j);
 					printf(" ");
-					printf("%d%d", k, n);
+					printf("%d", k);
+					printf("%d", n);
 					printf(",");
 					}
 				}
