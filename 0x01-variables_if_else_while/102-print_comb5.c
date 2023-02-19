@@ -20,6 +20,7 @@ int main(void)
 					printf("%d%d", i, j);
 					printf(" ");
 					printf("%d%d", k, n);
+					printf(",");
 					}
 				}
 			}
