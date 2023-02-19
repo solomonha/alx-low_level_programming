@@ -16,9 +16,11 @@ int main(void)
 			for (k = j; k <= 9; k++)
 				{
 				for (n = k; n <= 9; n++)
+					{
 					printf("%d%d", i, j);
 					printf(" ");
 					printf("%d%d", k, n);
+					}
 				}
 			}
 		}
