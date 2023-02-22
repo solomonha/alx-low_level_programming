@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of all the multiples of 3 or 5,
- *        below 1024 (excluded),followed by a new line.
+ * main - Lists all the natural numbers below 1024 (excluded)
+ *        that are multiples of 3 or 5.
  *
- * return: 0 (success)
+ * Return: Always 0.
  */
 int main(void)
 {
