@@ -15,7 +15,7 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		sum = Fib1 + Fib2;
-		printf("%lu", sum);
+		printf("%1f", sum);
 		Fib1 = Fib2;
 		Fib2 = sum;
 		if (count == 49)
@@ -27,4 +27,5 @@ int main(void)
 			printf(", ");
 		}
 	}
+	return (0);
 }
