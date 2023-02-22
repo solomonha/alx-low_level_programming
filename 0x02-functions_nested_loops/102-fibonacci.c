@@ -8,14 +8,14 @@
 int main(void)
 {
 	int count;
-	double Fib1, Fib2, sum;
+	unsigned long Fib1, Fib2, sum;
 
 	Fib1 = 0;
 	Fib2 = 1;
 	for (count = 0; count < 50; count++)
 	{
 		sum = Fib1 + Fib2;
-		printf("%1f", sum);
+		printf("%lu", sum);
 		Fib1 = Fib2;
 		Fib2 = sum;
 		if (count == 49)
