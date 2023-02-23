@@ -29,7 +29,7 @@ int main(void)
 	{
 		max = n;
 	}
-	printf("%lu ", max);
+	printf("%ld ", max);
 	printf("\n");
 	return (0);
 }
