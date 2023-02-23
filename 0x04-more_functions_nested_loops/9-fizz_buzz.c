@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100
@@ -11,20 +10,20 @@
 int main(void)
 {
 	int n;
-	char F[] = "Fizz";
-	char B[] = "Buzz";
-	char FB[] = "FizzBuzz";
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
 	for (n = 1; n <= 100; n++)
 	{
 		if (n == 100)
-			printf("%s", B);
+			printf("%s", b);
 		else if ((n % 3 == 0) && (n % 5 == 0))
-			printf("%s", FB);
+			printf("%s", fb);
 		else if ((n % 3) == 0)
-			printf("%s", F);
+			printf("%s", f);
 		else if ((n % 5) == 0)
-			printf("%s", B);
+			printf("%s", b);
 		else
 			printf("%d", n);
 		printf(" ");
