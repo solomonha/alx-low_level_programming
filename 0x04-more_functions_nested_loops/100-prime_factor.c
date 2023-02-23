@@ -29,7 +29,6 @@ int main(void)
 	{
 		max = n;
 	}
-	printf("%ld ", max);
-	printf("\n");
+	printf("%ld\n", max);
 	return (0);
 }
