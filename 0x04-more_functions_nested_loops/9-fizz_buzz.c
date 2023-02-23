@@ -19,7 +19,7 @@ int main(void)
 	{
 		if (n == 100)
 			printf("%s", B);
-		else if (((n % 3) == 0) && ((n % 5) == 0))
+		else if ((n % 3 == 0) && (n % 5 == 0))
 			printf("%s", FB);
 		else if ((n % 3) == 0)
 			printf("%s", F);
