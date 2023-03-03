@@ -14,7 +14,7 @@ char *rot13(char *s)
 
         for (i = 0; s[i] != '\0'; i++)
         {
-                for (j = 0; j < 52; j++)
+                for (j = 0; s[j] != '\0'; j++)
                 {
                         if (s[i] == input[j])
                         {
@@ -23,6 +23,5 @@ char *rot13(char *s)
                         }
                 }
         }
-	s[i] = '\0';
         return (s);
 }
