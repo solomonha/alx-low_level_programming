@@ -12,4 +12,5 @@ char *cap_string(char *s);
 char *leet(char *s);
 char *rot13(char *s);
 
+
 #endif /* MAIN_H */

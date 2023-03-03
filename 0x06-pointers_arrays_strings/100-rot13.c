@@ -9,19 +9,20 @@
 char *rot13(char *s)
 {
         int i, j;
-        char encode[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        char decode[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+        char input[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        char output[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
         for (i = 0; s[i] != '\0'; i++)
         {
                 for (j = 0; j < 52; j++)
                 {
-                        if (s[i] == encode[j])
+                        if (s[i] == input[j])
                         {
-                                s[i] = decode[j];
+                                s[i] = output[j];
                                 break;
                         }
                 }
         }
+	s[i] = '\0';
         return (s);
 }
