@@ -1,4 +1,4 @@
-**This project is a continual of previous two projects that emphasizes on pointers, arrays and strings. Hence listed below are lists of tasks:
+#  This project is a continual of previous two projects that emphasizes on pointers, arrays and strings. Hence listed below are lists of tasks:
 1.  0. memset
  * The  memset() function fills the first n bytes of the memory area pointed to by s with the
        constant byte c.
