@@ -10,7 +10,7 @@
 *
 * Return: (0)
 */
-int divide_change(int *change, int cent);
+/* int divide_change(int *change, int cent); */
 int main(int argc, char *argv[])
 {
 	int change;
