@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
 * main - function to print name of function followed by newline
 * @argc: unused argument
@@ -15,5 +16,4 @@ int main(int argc, char *argv[])
 
 	printf("%s\n", argv[argc]);
 	return (0);
-
 }
