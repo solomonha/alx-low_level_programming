@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int divide_change(int *change, int cent);
 /**
 * main - function to determine minimum number of coins needed to make change
 * @argc: argument to determine how many arguments to program are provided
@@ -9,8 +10,7 @@
 * @argv: argument array with program name and arguments
 *
 * Return: (0)
-*/
-/* int divide_change(int *change, int cent); */
+*/+
 int main(int argc, char *argv[])
 {
 	int change;
