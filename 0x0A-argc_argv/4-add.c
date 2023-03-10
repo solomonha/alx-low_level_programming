@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		while (i < argc)
 		{
 			if (!atoi(argv[i]))
-			{	
+			{
 				printf("%s\n", "Error");
 				return (1);
 			}
