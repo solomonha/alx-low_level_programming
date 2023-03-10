@@ -10,7 +10,7 @@ int divide_change(int *change, int cent);
 * @argv: argument array with program name and arguments
 *
 * Return: (0)
-*/+
+*/
 int main(int argc, char *argv[])
 {
 	int change;
