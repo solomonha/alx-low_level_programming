@@ -26,7 +26,7 @@
             * Return: the pointer to the newly created array
             * If min > max, return NULL
             * If malloc fails, return NULL
-    5.  _realloc
+   5.  _realloc
          - Write a function that reallocates a memory block using malloc and free
             * Prototype: void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
             * where ptr is a pointer to the memory previously allocated with a call to malloc: malloc(old_size)
@@ -38,7 +38,7 @@
             * If ptr is NULL, then the call is equivalent to malloc(new_size), for all values of old_size and new_size
             * If new_size is equal to zero, and ptr is not NULL, then the call is equivalent to free(ptr). Return NULL
             * Don’t forget to free ptr when it makes sense
-    6. Write a program that multiplies two positive numbers.
+   6. Write a program that multiplies two positive numbers.
             * Usage: mul num1 num2
             * num1 and num2 will be passed in base 10
             * Print the result, followed by a new line
