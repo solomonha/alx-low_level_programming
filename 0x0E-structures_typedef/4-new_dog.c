@@ -14,43 +14,42 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int len;
-	char *name_t;
-	char *owner_t;
 	dog_t *d;
+	int len;
+	char *ptr;
 
-	if (name == NULL || owner == NULL)
+	if (name == 0 || owner == 0)
 		return (NULL);
 	d = malloc(sizeof(dog_t));
-
 	if (d == NULL)
 		return (NULL);
-	for (len  = 0; name[len]; len++)
-	name_t = malloc((len + 1) * sizeof(char));
-	if (name_t == NULL)
+
+	for (len = 1, ptr = name; *ptr; len++)
+		ptr++;
+	d->name = malloc(len);
+	if (d->name == 0)
 	{
 		free(d);
 		return (NULL);
 	}
-	for (len = 0; name[len]; len++)
-		name_t[len] = name[len];
-	name_t[len] = '\0';
 
-	for (len = 0; owner[len]; len++)
-	owner_t = malloc((len + 1) * sizeof(char));
-	if (owner_t == NULL)
+	for (len = 1, ptr = owner; *ptr; len++)
+		ptr++;
+	d->owner = malloc(len);
+	if (d->owner == 0)
 	{
+		free(d->name);
 		free(d);
-		free(name_t);
 		return (NULL);
 	}
-	for (len = 0; owner[len]; len++)
-		owner_t[len] = owner[len];
-	owner_t[len] = '\0';
 
-	d->name = name_t;
+	for (len = 0; *name != 0; len++, name++)
+		d->name[len] = *name;
+	d->name[len] = 0;
+	for (len = 0; *owner != 0; len++)
+		d->owner[len] = *owner++;
+	d->owner[len] = 0;
 	d->age = age;
-	d->owner = owner_t;
 
 	return (d);
 }
