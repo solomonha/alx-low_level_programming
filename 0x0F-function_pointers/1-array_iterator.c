@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stdlib.h>
+#define NULL 0
 /**
  * array_iterator - executes function as a parameter on each element of array
  * @array: input array of ints to use as function parameters
