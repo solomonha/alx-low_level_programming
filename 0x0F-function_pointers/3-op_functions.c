@@ -3,67 +3,51 @@
 #include <stdio.h>
 /**
  * op_add - 5 functions
- * @a: First input integer
- * @b: second input integer
+ * @a: input one
+ * @b: input two
  * Return: 0
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
-
 /**
- * op_sub - subtracts int b from int a
- * @a: first input integer
- * @b: second input integer
- *
- * Return: integer result of operation
+ * op_sub - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
-
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
-
 /**
- * op_mul - multiplies two integers together
- * @a: first input integer
- * @b: second input integer
- *
- * Return: integer result of operation
+ * op_mul - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
-
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
-
 /**
- * op_div - divides int b from int a
- * @a: first input integer
- * @b: second input integer
- *
- * Return: integer result of operation
+ * op_div - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
-
 int op_div(int a, int b)
 {
-	if (b != 0)
-		return (a / b);
-	exit(100);
+	return (a / b);
 }
-
 /**
- * op_mod - finds remainder of dividing int b from int a
- * @a: first input integer
- * @b: second input integer
- *
- * Return: integer result of operation
+ * op_mod - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
-
 int op_mod(int a, int b)
 {
-	if (b != 0)
-		return (a % b);
-	exit(100);
+	return (a % b);
 }
