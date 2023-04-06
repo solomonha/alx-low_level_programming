@@ -23,6 +23,10 @@ unsigned int binary_to_uint(const char *b)
 		{
 			sum += (1 << power);
 		}
+		if (b[count] != '0' && b[count] != '1')
+		{
+				return (0);
+		}
 		power++;
 	}
 	return (sum);
