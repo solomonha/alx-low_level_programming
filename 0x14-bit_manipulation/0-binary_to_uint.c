@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		if (b[count] != '0' && b[count] != '1')
 		{
-				return (0);
+			return (0);
 		}
 		power++;
 	}
