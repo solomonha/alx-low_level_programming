@@ -60,7 +60,7 @@ int read_errck(int fd1, int fd2, char *c)
 int main(int argc, char *argv[])
 {
 	int size_r, size_w, file_from, file_to, err;
-	char *buf[1024];
+	char buf[1024];
 
 	if (argc != 3)
 	{
