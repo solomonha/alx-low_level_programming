@@ -80,15 +80,14 @@ int main(int argc, char *argv[])
 		closefd_errck(file_from);
 		exit(99);
 	}
-	do
-	{
+	do {
 		size_r = read(file_from, buf, 1024);
 		if (size_r == -1)
 			return (read_errck(file_from, file_to, argv[1]));
 		size_w = write(file_to, buf, size_r);
 		if (size_w == -1 || size_w != size_r)
 			return (write_errck(file_from, file_to, argv[2]));
-	}while (size_r == 1024);
+	} while (size_r == 1024);
 	err = closefd_errck(file_from);
 	err += closefd_errck(file_to);
 	if (err != 0)
