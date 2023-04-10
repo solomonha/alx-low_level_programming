@@ -25,6 +25,7 @@ int closefd_errck(int fd)
  * @fd1: file descriptor 1 to close
  * @fd2: file descriptor 2 to close
  * @c: file printing the error
+ * Return: 0
  */
 int write_errck(int fd1, int fd2, char *c)
 {
@@ -38,6 +39,7 @@ int write_errck(int fd1, int fd2, char *c)
  * @fd1: file descriptor 1 to close
  * @fd2: file descriptor 2 to close
  * @c: file printing the error
+ * Return: 0
  */
 int read_errck(int fd1, int fd2, char *c)
 {
