@@ -65,13 +65,13 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		return (97);
+		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		return (98);
+		exit(98);
 	}
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		closefd_errck(file_from);
-		return (99);
+		exit(99);
 	}
 	while (size_r == 1024)
 	{
@@ -93,6 +93,6 @@ int main(int argc, char *argv[])
 	err = closefd_errck(file_from);
 	err += closefd_errck(file_to);
 	if (err != 0)
-		return (100);
+		exit (100);
 	return (0);
 }
