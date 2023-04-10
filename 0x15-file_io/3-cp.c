@@ -15,7 +15,7 @@ int closefd_errck(int fd)
 	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
+		return (100);
 	}
 	return (0);
 }
@@ -26,12 +26,12 @@ int closefd_errck(int fd)
  * @fd2: file descriptor 2 to close
  * @c: file printing the error
  */
-void write_errck(int fd1, int fd2, char *c)
+int write_errck(int fd1, int fd2, char *c)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", c);
 	closefd_errck(fd1);
 	closefd_errck(fd2);
-	exit(99);
+	return (99);
 }
 /**
  * read_errck - prints error message and exits if file_from can't be read
@@ -39,12 +39,12 @@ void write_errck(int fd1, int fd2, char *c)
  * @fd2: file descriptor 2 to close
  * @c: file printing the error
  */
-void read_errck(int fd1, int fd2, char *c)
+int read_errck(int fd1, int fd2, char *c)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", c);
 	closefd_errck(fd1);
 	closefd_errck(fd2);
-	exit(98);
+	return (98);
 }
 /**
  * main - a function that copies the content of a file to another file
@@ -82,11 +82,11 @@ int main(int argc, char *argv[])
 	while (size_r == 1024)
 	{
 		size_r = read(file_from, buf, 1024);
-		if (size_r < 0)
-			read_errck(file_from, file_to, argv[1]);
+		if (size_r == -1)
+			return(read_errck(file_from, file_to, argv[1]));
 		size_w = write(file_to, buf, size_r);
 		if (size_w == -1 || size_w != size_r)
-			write_errck(file_from, file_to, argv[2]);
+			return(write_errck(file_from, file_to, argv[2]));
 	}
 	err = closefd_errck(file_from);
 	err += closefd_errck(file_to);
